@@ -1,1 +1,4 @@
-from .agpy import *
+from . import *
+from .window import *
+from .keycodes import *
+from .keyboard import *
