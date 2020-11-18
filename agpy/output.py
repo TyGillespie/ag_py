@@ -25,7 +25,7 @@ def output(text):
     tolk.output(text)
 
 
-def slience():
+def silence():
     """Silence the screen reader (if currently speaking).
     This should be called before output() for more reliability.
 
