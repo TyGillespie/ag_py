@@ -7,5 +7,6 @@ black output.py
 black timer.py
 black window.py
 black ui.py
+black audio.py
 
 pause
