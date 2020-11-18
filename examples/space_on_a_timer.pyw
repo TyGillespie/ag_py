@@ -14,8 +14,8 @@ import time
 
 def main():
     show_window("Agpy example.")
-    space_timer = Timer()
-    space_time = 250
+    space_timer: Timer = Timer()
+    space_time: int = 250
     while True:
         time.sleep(0.001)
         if key_pressed(K_SPACE) and space_timer.elapsed >= space_time:
