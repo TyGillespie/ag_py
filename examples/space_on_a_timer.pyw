@@ -1,20 +1,26 @@
+"""makes you press space on a timer. Also allows you to exit with escape.
+Shows the output module as well.
+"""
+
+import sys
+
+sys.path.append("..")
 from agpy import *
 
-import winsound
+sys.path.remove("..")
+
 import time
-import sys
 
 
 def main():
-
     show_window("Agpy example.")
     space_timer = Timer()
     space_time = 250
     while True:
-        time.sleep(0.005)
+        time.sleep(0.001)
         if key_pressed(K_SPACE) and space_timer.elapsed >= space_time:
             space_timer.restart()
-            winsound.Beep(250, 250)
+            speak("Beep!")
         if key_pressed(K_ESCAPE):
             sys.exit()
 
