@@ -10,6 +10,7 @@ from agpy.keycodes import *
 from agpy.window import *
 from agpy.timer import *
 from agpy.output import *
+from agpy.utils import *
 
 sys.path.remove("..")
 
@@ -26,7 +27,7 @@ def main():
             space_timer.restart()
             speak("Beep!")
         if key_pressed(K_ESCAPE):
-            sys.exit()
+            quit()
 
 
 if __name__ == "__main__":

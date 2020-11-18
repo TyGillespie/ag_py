@@ -8,5 +8,6 @@ black timer.py
 black window.py
 black ui.py
 black audio.py
+black utils.py
 
 pause

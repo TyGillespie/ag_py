@@ -7,6 +7,7 @@ sys.path.append("..")
 from agpy.window import *
 from agpy.keyboard import *
 from agpy.keycodes import *
+from agpy.utils import *
 
 sys.path.remove("..")
 
@@ -18,7 +19,7 @@ def main():
     while True:
         time.sleep(0.001)
         if key_pressed(K_ESCAPE):
-            sys.exit()
+            quit()
 
 
 if __name__ == "__main__":

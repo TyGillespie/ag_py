@@ -6,6 +6,7 @@ import sys
 sys.path.append("..")
 from agpy.ui import *
 from agpy.window import *
+from agpy.utils import *
 
 sys.path.remove("..")
 
@@ -14,8 +15,7 @@ def main():
     show_window("Dialog test.")
     dlg("Hi!")
     dlg("Test again!")
-    destroy_window()
-    sys.exit()
+    quit()
 
 
 if __name__ == "__main__":
