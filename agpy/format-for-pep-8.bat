@@ -6,5 +6,6 @@ black keycodes.py
 black output.py
 black timer.py
 black window.py
+black ui.py
 
 pause
