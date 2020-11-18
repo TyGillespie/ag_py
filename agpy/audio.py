@@ -1,16 +1,16 @@
 """Audio playing functions."""
 
+import playsound
+
 import winsound
 
 
 def play_sound(file_name: str, wait: bool = False):
-    """Plays an audio file.
-    Currently only supports wave files.
-    """
-    flags: int = 0
-    if not wait:
-        flags = winsound.SND_ASYNC
-    winsound.PlaySound(file_name, flags)
+    """Plays an audio file."""
+    flag: bool = False
+    if wait:
+        flag = True
+    playsound.playsound(file_name, flag)
 
 
 def beep(freq: int, lentgh: int):
