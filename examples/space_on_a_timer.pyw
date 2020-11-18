@@ -5,7 +5,11 @@ Shows the output module as well.
 import sys
 
 sys.path.append("..")
-from agpy import *
+from agpy.keyboard import *
+from agpy.keycodes import *
+from agpy.window import *
+from agpy.timer import *
+from agpy.output import *
 
 sys.path.remove("..")
 
