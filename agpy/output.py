@@ -9,7 +9,7 @@ tolk.load()
 
 def speak(text: str):
     """Speak a string of text."""
-    tolk.output(text)
+    tolk.speak(text)
 
 
 def braille(text: str):
@@ -22,13 +22,10 @@ def output(text):
     More unreliable, as one will most likely take
     priority (this is a Tolk/Screen Reader issue).
     """
+    silence()
     tolk.output(text)
 
 
 def silence():
-    """Silence the screen reader (if currently speaking).
-    This should be called before output() for more reliability.
-
-    Todo: Call this function inside output() itself.
-    """
+    """Silence the screen reader (if currently speaking)."""
     tolk.silence()

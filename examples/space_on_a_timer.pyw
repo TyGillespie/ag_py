@@ -9,8 +9,8 @@ from agpy.keyboard import *
 from agpy.keycodes import *
 from agpy.window import *
 from agpy.timer import *
-from agpy.output import *
 from agpy.utils import *
+from agpy.audio import *
 
 sys.path.remove("..")
 
@@ -25,7 +25,7 @@ def main():
         time.sleep(0.001)
         if key_pressed(K_SPACE) and space_timer.elapsed >= space_time:
             space_timer.restart()
-            speak("Beep!")
+            beep(500, 100)
         if key_pressed(K_ESCAPE):
             quit()
 

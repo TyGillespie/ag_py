@@ -18,7 +18,7 @@ def quit():
 
 
 def is_admin() -> bool:
-    """Determains if the user is running your game as admin."""
+    """Determines if the user is running your game as admin."""
     try:
         return os.getuid() == 0
     except AttributeError:
