@@ -7,7 +7,7 @@ An audio game engine written in Python.
 * Keyboard handling that wraps Pygame.
 * Basic window support.
 * UI support (currently only dialogs).
-* Basic audio support (wave files).
+* Basic audio support (wave files and beeps).
 * Different options for outputting to a screen reader (wraps Cytolk).
 
 ## Contributing.
@@ -20,6 +20,7 @@ Feel free to contribute, either with Pole Requests or Issues. If using PRs, I as
 
 * Beeping in a thread now works better, and is optional.
 * We now use ctypes for beeping.
+* Fixed typos and added information in README file.
 
 ### 0.11
 

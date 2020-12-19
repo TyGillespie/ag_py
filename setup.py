@@ -1,7 +1,13 @@
+"""Setup script.
+
+Call with
+pip install .
+"""
+
 from setuptools import setup, find_packages
 
 
-__version__ = 0.11
+__version__ = 0.12
 
 with open("readme.md", "r") as f:
     long_description = f.read()
@@ -14,7 +20,7 @@ setup(
     description="A basic Audiogame Engine.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="http://github.com/tygillespie/.agpy",
+    url="http://github.com/tygillespie/agpy",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
