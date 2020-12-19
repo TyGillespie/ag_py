@@ -7,10 +7,10 @@ pip install .
 from setuptools import setup, find_packages
 
 
-__version__ = 0.12
+__version__: float = 0.12
 
 with open("readme.md", "r") as f:
-    long_description = f.read()
+    long_description: str = f.read()
 
 setup(
     name="ag_py",
