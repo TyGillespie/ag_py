@@ -25,7 +25,7 @@ def is_admin() -> bool:
         return ctypes.windll.shell32.IsUserAnAdmin() != 0
 
 
-def percent(n1: int, n2: int) -> bool:
+def percent(n1: int, n2: int) -> int:
     """Finds the percentage of n1 out of n2.
     For example, if n1 was 5, and n2 was 10, it would return 50.
     """
@@ -34,8 +34,8 @@ def percent(n1: int, n2: int) -> bool:
 
 def generate_string(length: int) -> str:
     """Generates a random string of a given lentgh."""
-    symbols = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-    final_string = ""
+    symbols: str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+    final_string: str = ""
     for i in range(length):
         final_string += symbols[random.randint(0, len(symbols) - 1)]
     return final_string

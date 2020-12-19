@@ -4,6 +4,7 @@
 from cytolk import tolk
 
 
+# Initialize the system upon import.
 tolk.load()
 
 

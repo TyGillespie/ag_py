@@ -18,6 +18,7 @@ class Timer:
     """Timer object."""
 
     def __init__(self):
+        """Initializes the object."""
         self.start_time: int = get_current_ms()
         self.running: bool = True
         self.current_time: int = 0

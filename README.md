@@ -21,6 +21,7 @@ Feel free to contribute, either with Pole Requests or Issues. If using PRs, I as
 * Beeping in a thread now works better, and is optional.
 * We now use ctypes for beeping.
 * Fixed typos and added information in README file.
+* More comments and type hints.
 
 ### 0.11
 

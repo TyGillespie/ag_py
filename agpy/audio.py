@@ -19,7 +19,7 @@ def play_sound(file_name: str, wait: bool = False):
 
 
 def beep(freq: int, length: int, threaded: bool = True):
-    """Beeps a tone."""
+    """Beeps a tone through the PC speaker."""
     if threaded:
         beep_thread: threading.Thread = threading.Thread(
             target=lambda: kernel32.Beep(freq, length)
