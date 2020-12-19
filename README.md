@@ -16,6 +16,11 @@ Feel free to contribute, either with Pole Requests or Issues. If using PRs, I as
 
 ## Changes
 
+### 0.12
+
+* Beeping in a thread now works better, and is optional.
+* We now use ctypes for beeping.
+
 ### 0.11
 
 * Beeps now occur in a thread.
